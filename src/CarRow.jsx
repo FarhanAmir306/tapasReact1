@@ -2,17 +2,11 @@ import React from 'react'
 import CarDetails from './CarDetails'
 import PropTypes from 'prop-types'
 
-
-function CarRow({car}) {
+function CarRow({ car }) {
   return (
-    <>
-        <div className="rounded-lg ">
-            <CarDetails car={car}/>
-        </div>
-    </>
-  )
+    <CarDetails car={car}/>
+  );
 }
-
 CarRow.propTypes = {
   car: PropTypes.object.isRequired
 }
