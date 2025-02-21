@@ -1,5 +1,7 @@
 import React from 'react'
 import CarRow from './CarRow'
+import { PropTypes } from "prop-types";
+
 
 function CarList({cars,search,premium}) {
 
@@ -25,5 +27,11 @@ cars.forEach((car) => {
     </>
   );
 }
+
+CarList.propTypes = {
+  cars: PropTypes.array.isRequired,
+  search: PropTypes.string.isRequired,
+  premium: PropTypes.bool.isRequired,
+ };
 
 export default CarList

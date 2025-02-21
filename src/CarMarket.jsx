@@ -1,5 +1,4 @@
 
-
 import Header from './Header'
 import SearchBar from './SearchBar'
 import CarList from './CarList'

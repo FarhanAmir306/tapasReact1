@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { PropTypes } from "prop-types";
 
 function CheckBox({handlePremium,premium}) {
   return (
@@ -19,5 +19,11 @@ function CheckBox({handlePremium,premium}) {
     </>
   );
 }
+
+CheckBox.propTypes = {
+  handlePremium: PropTypes.func.isRequired,
+  premium: PropTypes.bool.isRequired,
+ };
+
 
 export default CheckBox

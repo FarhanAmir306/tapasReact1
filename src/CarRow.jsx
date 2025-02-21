@@ -1,6 +1,6 @@
 import React from 'react'
 import CarDetails from './CarDetails'
-import PropTypes from 'prop-types'
+import { PropTypes } from "prop-types";
 
 function CarRow({ car }) {
   return (
@@ -9,6 +9,7 @@ function CarRow({ car }) {
 }
 CarRow.propTypes = {
   car: PropTypes.object.isRequired
+
 }
 
 

@@ -1,4 +1,5 @@
 import CheckBox from "./CheckBox";
+import { PropTypes } from "prop-types";
 
 
 function SearchBar({ search, setSearch }) {
@@ -12,5 +13,11 @@ function SearchBar({ search, setSearch }) {
     />
   );
 }
+
+SearchBar.propTypes = {
+    search: PropTypes.string.isRequired,
+    setSearch: PropTypes.func.isRequired,
+  
+};
 
 export default SearchBar;
